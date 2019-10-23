@@ -293,6 +293,7 @@ a {
     display: block;
     margin-left: 0.5vw;
     margin-right: 0.5vw;
+    font-size: 5.6vw;
   }
   input.toggle-menu:checked + label.toggle-menu{
     color: black;
@@ -306,24 +307,19 @@ a {
     width: auto;
   }*/
   .title-selection__bar-sevices {
-    /* margin-left: 0; */
-    /* min-height: 78.9vw; */
     width: 100%;
-    /* display: flex; */
-    /* flex-direction: column; */
-  }*/
-  /*
+  }
   .bar-buttons {
     padding-left: 0px;
     padding-right: 0;
     min-height: 80px;
     width: 100%;
-  }*/
+  }
   a {
     text-decoration: inherit;
     outline: inherit;
     color: white;
-    font-size: 2.6rem;
+    font-size: 5.6vw;
     width: inherit;
     min-height: inherit;
   }
