@@ -217,7 +217,7 @@ a {
 .content-photo {
   min-height: 20.8vw;
   width: 15.6vw;
-  background: url("./images/photo.jpg");
+  background: url("images/photo.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -292,7 +292,7 @@ a {
     width: 100%;
     position: absolute;
     top: 121px;
-    background-image: url("./images/mobile.jpg");
+    background-image: url("images/mobile.jpg");
     background-size: cover;
   }
   .team-leaders {
