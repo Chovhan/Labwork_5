@@ -587,10 +587,14 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border: 1px solid #d2d3d7;    
   }
   .footer-top {
     min-height: 100px;
     width: 100%;
+    border-top: 1px solid #d2d3d7;
+    border-bottom: 1px solid #d2d3d7;
+    /* margin-bottom: 10px; */
   }
   .footer-title {
     min-height: 50px;
