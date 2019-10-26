@@ -1,0 +1,38 @@
+@mixin font-title ($color, $fontS, $letterSp, $textShadow) {
+  color: $color;
+  font-size: $fontS;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-family: Athelas;
+  font-weight: 400;
+  letter-spacing: $letterSp;
+  text-shadow: $textShadow;
+}
+
+@mixin font-text ($colorT, $fontST, $letterSpT, $lineHT) {
+  color: $colorT;
+  font-family: Helvetica;
+  font-size: $fontST;
+  font-weight: 400;
+  line-height: $lineHT;
+  letter-spacing: $letterSpT;
+}
+
+@mixin font-footer_text ($fontSF, $lineHF, $transformF) {
+  color: #d2d3d7;
+  font-family: "Myriad Pro";
+  font-size: $fontSF;
+  font-weight: 400;
+  line-height: $lineHF;
+  text-transform: $transformF;
+  letter-spacing: 0.6px;
+  text-align: center;
+}
+
+@mixin flex-position ($flexD, $justifyC, $alignI, $alignC) {
+  display: flex;
+  flex-direction: $flexD;
+  justify-content: $justifyC;
+  align-items: $alignI;
+  align-content: $alignC;
+}

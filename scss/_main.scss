@@ -1,0 +1,280 @@
+@import "_mixin";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 10px;
+  box-sizing: content-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.title-selection {
+  min-height: 53.3vw;
+  width: auto;
+  @include flex-position(column, default, default, default);
+}
+
+.title-selection__header {
+  min-height: 121px;
+  width: auto;
+  @include flex-position(default, default, center, default);
+}
+
+.title-selection__header-content {
+  margin-left: $font-size__title-selection__margin-left;
+  min-height: 17px;
+  width: 239px;
+  font-size: 1.6rem;
+}
+
+.title-selection__bar {
+  min-height: 4vw;
+  width: auto;
+  background: rgba(145, 143, 154, 0.62);
+  z-index: 2;
+}
+
+.title-selection__bar-sevices {
+  margin-left: $font-size__title-selection__margin-left;
+  min-height: 4vw;
+  width: 38.5vw;
+  @include flex-position(row, default, default, default);
+}
+
+.bar-buttons {
+  display: block;
+  padding-left: 10px;
+  padding-right: 10px;
+  min-height: 4vw;
+  width: auto;
+  @include flex-position(default, default, center, default);
+}
+
+a {
+  text-decoration: inherit;
+  outline: inherit;
+  color: white;
+  font-size: 1.6rem;
+  min-height: inherit;
+  @include flex-position(default, center, center, default);
+}
+
+.bar-buttons:hover {
+  color: white;
+  background: rgba(145, 143, 154, 0.8);
+}
+
+.title-selection__bar [type="checkbox"]{
+  display: none;
+}
+
+.title-selection__bar label.toggle-menu {
+  display: block;
+  cursor: pointer;
+  margin-top: 1.1vw;
+  font-size: 1.6rem;
+  color: white;
+  text-transform: uppercase;
+  display: none;
+}
+
+.title-selection__image {
+  min-height: 782px;
+  width: auto;
+  position: relative;
+  top: -4vw;
+  z-index: 1;
+  background-image: url("https://store-images.s-microsoft.com/image/apps.608.13967555278436988.2000000000016084146.a81ddaea-8a37-4b45-9261-c14549861c4d?mode=scale&q=90&h=1080&w=1920&background=%23FFFFFF");
+  background-size: cover;
+  @include flex-position(column, flex-end, flex-end, default);
+}
+
+.title-selection__image-welcome {
+  position: relative;
+  top: -20px;
+  min-height: 6.4vw;
+  min-width: $width__title-selection_one;
+  @include flex-position(column, space-around, center, center);
+}
+
+.title-selection__image-welcome_first {
+  padding-right: 5px;
+  min-width: 26vw;
+  min-height: 2.6vw;
+  @include font-title(#fcf9f7, 3.1vw, 1.8px, $color-black 0 0 5px)
+}
+
+.title-selection__image-welcome_second {
+  min-width: $width__title-selection_one;
+  min-height: 1.6vw;
+  @include font-title(#ffffff, $font-size__footer, 1.2px, $color-black 0 0 5px)
+}
+
+.team-leaders {
+  min-height: 53.3vw;
+  width: auto;
+  @include flex-position(default, center, center, default);
+}
+
+.team-leaders__content {
+  min-height: 41.6vw;
+  width: 80.3vw;
+  @include flex-position(column, center, center, default);
+}
+
+.team-leaders__content-container {
+  @include flex-position(column, default, center, default);
+}
+
+.team-leaders__content-title {
+  width: 33.1vw;
+  min-height: 2.1vw;
+  text-align: center;
+  @include font-title(#a95e39, $font-size__footer, 1.8px, white 0 0 0)
+}
+
+.team-leaders__content-element {
+  margin-top: 3px;
+  width: 23.1vw;
+  min-height: 4px;
+  background-color: #88543a;
+}
+
+.team-leaders__content-container_two {
+  min-height: 10.4vw;
+  text-align: center;
+  @include flex-position(default, center, center, default);
+}
+
+.team-leaders__content-text {
+  min-height: 9vw;
+  width: 700px;
+  @include font-text($color-black, 1.2vw, 0.9px, 25.46px);
+}
+
+.team-leaders__info-container {
+  min-height: 27.4vw;
+  width: 78.1vw;
+  @include flex-position(default, space-between, default, default);
+}
+
+.leaders-info {
+  min-height: 27.4vw;
+  width: $width__leaders-info;
+  @include flex-position(column, space-between, default, default);
+}
+
+.content-photo {
+  min-height: 20.8vw;
+  width: $width__leaders-info;
+  background: url("../images/photo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-name {
+  @include flex-position(default, space-around, center, default);
+  min-height: 1.5vw;
+  width: $width__leaders-info;
+  @include font-text($color-black, 1.5vw, 0.9px, 25.46px);
+}
+
+.content-about {
+  @include flex-position(default, center, center, default);
+  text-align: center;
+  min-height: 4.1vw;
+  width: $width__leaders-info;
+  @include font-text($color-black, 1vw, 0.9px, default);
+}
+
+.footer-container__top {
+  min-height: 250px;
+  width: auto;
+  @include flex-position(row, space-around, default, default);
+  background: #0b2a33;
+}
+
+.footer-top {
+  min-height: 250px;
+  width: 13vw;
+  @include flex-position(column, default, default, default);
+}
+
+.footer-title {
+  width: 100%;
+  min-height: 95px;
+  @include font-footer_text(1.25vw, default, uppercase);
+  @include flex-position(default, space-around, center, default);
+}
+
+.footer-filling a {
+  width: 100%;
+  height: 100%;
+  @include font-footer_text($font-size_three, 1.8vw, default);
+}
+
+.footer-top__contact {
+  @include font-footer_text(1.3rem, 1.04vw, default);
+  display: flex;
+}
+
+.footer-top__contact-phones {
+  width: 100%;
+  height: auto;
+  margin-left: 0.26vw;
+  @include flex-position(row, default, center, default);
+  margin-top: 1.56vw;
+  text-align: left;
+}
+
+.footer-top__contact-phones-numbers {
+  width: auto;
+  height: auto;
+  @include flex-position(column, default, default, default);
+  margin-left: 0.78vw;
+  font-size: $font-size_three;
+}
+
+.footer-top__contact-adress {
+  width: auto;
+  height: auto;
+  margin-left: 0.26vw;
+  margin-top: 0.52vw;
+  @include flex-position(row, default, center, default);
+}
+
+.footer-top__contact-adress_text {
+  margin-left: 0.78vw;
+  font-size: $font-size_three;
+  text-align: left;
+}
+
+.footer-container__bottom {
+  width: auto;
+  min-height: 91px;
+  background: $color-black;
+  color: white;
+  @include flex-position(default, space-between, center, default);
+}
+
+.footer-container__bottom-text {
+  height: 100%;
+  width: auto;
+  margin-left: 1vw;
+  font-size: 1vw;
+}
+
+.footer-container__bottom-services {
+  height: 100%;
+  width: 200px;
+  @include flex-position(row, space-around, default, default);
+  font-size: $font-size__footer;
+  margin-right: 20px;
+}
