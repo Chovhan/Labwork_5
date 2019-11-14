@@ -194,6 +194,312 @@ a {
   @include font-text($color-black, 1vw, 0.9px, default);
 }
 
+.advatages {
+  @include flex-position(default, center, center, default);
+  width: auto;
+  min-height: 400px;
+  background: #0b2a33;
+}
+
+.advatages-container {
+  @include flex-position(default, space-between, default, default);
+  width: 80.3vw;
+  min-height: 250px;
+  // background: red;
+}
+
+.advantages-content {
+  @include flex-position(column, space-between, center, default);
+  height: 100%;
+  width: 200px;
+  // background: yellow;
+}
+
+.content-number {
+  min-height: 150px;
+  width: 100%;
+  @include font-text(#995437, 5vw, 1.5px, default);
+  @include flex-position(default, center, center, default);
+  font-weight: 700;
+  font-family: Vani;
+}
+
+.content-text {
+  min-height: 100px;
+  width: 100%;
+  @include font-text(#ffffff, 1.7vw, 1px, default);
+  text-align: center;
+}
+
+.background-stub {
+  min-height: 1000px;
+  width: auto;
+  background: url("../images/minecraftFields.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-us {
+  min-height: 60vw;
+  width: auto;
+  background: #0b2a33;
+  @include flex-position(default, center, center, default);
+}
+
+.contact-us__container {
+  width: 80.3vw;
+  min-height: 41.6vw;
+  @include flex-position(column, default, center, default);
+  // background: red;
+}
+
+.contact-us__container-header {
+  // background:  black;
+  width: 40vw;
+  min-height: 3.6vw;
+  text-align: center;
+  @include flex-position(column, center, center, default);
+}
+
+.contact-us__container-title {
+  width: 100%;
+  min-height: 1.8vw;
+  text-align: center;
+  @include font-text(#ffffff, 3.5vw, 1.2px, default);
+}
+
+.contact-us__container-text {
+  width: 100%;
+  min-height: 1.8vw;
+  text-align: center;
+  @include font-text(#c0c0c0, 1.5vw, 0.5px, default);
+}
+
+.contact-us__container-main {
+  // background: purple;
+  width: 100%;
+  min-height: 38vw;
+  border: 1px solid #0b2a33;
+  @include flex-position(column, space-around, center, default);
+}
+
+.contact-us__lines {
+  width: 100%;
+  height: 3vw;
+  @include flex-position(default, space-between, default, default);
+}
+
+input[name="name"], [name="phone"], select{
+  border: 1px solid #0b2a33;
+  border-bottom: 1px solid #c0c0c0;
+  background: #0b2a33;
+  color: #c0c0c0;
+  font-size: 1.6rem;
+  width: 38vw;
+  height: 100%;
+}
+
+select {
+  color: #818181;
+  border-bottom: 1px solid #cdc8c8;
+}
+
+.contact-us__container-main_three {
+  width: 100%;
+  min-height: 15vw;
+  @include flex-position(column, space-between, default, default);
+}
+
+input[name="email"], textarea{
+  border: 1px solid #0b2a33;
+  border-bottom: 1px solid #c0c0c0;
+  background: #0b2a33;
+  color: #c0c0c0;
+  font-size: 1.6rem;
+  width: 100%;
+  height: 5vw;
+}
+
+textarea[name="message"] {
+  height: 8vw;
+}
+
+.contact-us__container-main_four {
+  @include flex-position(default, flex-end, default, default);
+}
+
+input[name="contactUs"] {
+  width: 10vw;
+  background: #89553b;
+  border: 2px solid #623621;
+}
+
+.about {
+  min-height: 60vw;
+  width: auto;
+  background: #ffffff;
+  @include flex-position(default, center, center, default);
+}
+
+.about-us {
+  width: 90vw;
+  min-height: 30vw;
+  // border: 1px solid black;
+  @include flex-position(default, space-between, default, default);
+}
+
+.about-us__sections {
+  width: 44vw;
+  height: auto;
+  // border: 1px solid green;
+}
+.about-us__img {
+  background: url("../images/steve.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us__template {
+  @include flex-position(default, center, center, default);
+}
+
+.about-us__template-conteiner {
+  min-height: 28vw;
+  width: 42vw;
+  border: 2px solid #bfbfbf;
+  background: #f9f9fb;
+  @include flex-position(column, space-around, center, default);
+}
+
+.about-us__template-conteiner_title {
+  min-height: 3vw;
+  width: 20vw;
+  text-align: center;
+  @include font-text(#000000, 3vw, 2.4px, default);
+}
+
+.about-us__template-conteiner_text{
+  min-height: 3.8vw;
+  width: 25vw;
+  text-align: center;
+  @include font-text(#3d3d3d, 1vw, 0.5px, default);
+}
+
+.about-us__template-conteiner__pluses-container {
+  width: 100%;
+  min-height: 18vw;
+  @include flex-position(row, space-around, default, default);
+}
+
+.about-us__pluses {
+  width: 12vw;
+  min-height: 100%;
+  @include flex-position(column, default, center, center);
+}
+
+.pluses-img{
+  width: 10vw;
+  min-height: 10vw;
+  border: 1px solid black;
+  border-radius: 50%;
+  text-align: center;
+  background: url("../images/stevePluses.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.pluses-element{
+  width: 2px;
+  min-height: 3vw;
+  background-color: #88543a;
+}
+
+.pluses-text {
+  width: 100%;
+  min-height: 2vw;;
+  border: 2px solid black;
+  @include font-text(#000000, 1vw, 0.5px, default);
+  @include flex-position(default, center, center, default);
+}
+
+.gallery {
+  width: auto;
+  min-height: 65vw;
+  @include flex-position(column, default, center, default);
+}
+
+.gallery-container__header {
+  width: 60vw;
+  height: 17vw;
+  @include flex-position(column, default, center, default);
+  margin-bottom: 50px;
+}
+
+.gallery-conteiner__header-title{
+  width: 100%;
+  min-height: 2.1vw;
+  text-align: center;
+  @include font-text(#a95e39, 4vw, 1.8px, default);
+}
+
+.gallery-conteiner__header-text {
+  margin-top: 20px;
+  min-height: 9vw;
+  width: auto;
+  @include font-text($color-black, 1.8vw, 1.8px, default);
+  text-align: center;
+  font-weight: 700;
+}
+
+.gallery-container__main {
+  width: 95vw;
+  min-height: 45vw;
+}
+
+.gallery-container__main-slider {
+  min-width: 100%;
+  min-height: 45vw;
+}
+
+.single .sl {
+  margin: 0 auto;
+  outline: 0;
+  max-width: auto;
+  min-height: 500px;
+  background-size: cover;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+}
+
+.prev-arrow{
+  left: -25px;
+  border-right: 15px solid #113463;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+.next-arrow{
+  right: -25px;
+  border-left: 15px solid #113463;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
 .footer-container__top {
   min-height: 250px;
   width: auto;
