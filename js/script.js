@@ -6,6 +6,7 @@ $(document).ready(function(){
     dots: true,
     prevArrow: '<button class="slide-arrow prev-arrow"></button>',
     nextArrow: '<button class="slide-arrow next-arrow"></button>',
+    centerPadding: "40px",
     responsive: [
       {
         breakpoint: 1024,
